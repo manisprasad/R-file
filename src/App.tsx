@@ -151,6 +151,11 @@ const App: React.FC = () => {
         return;
       }
 
+      if(payload.name === 'HARSH YADAV'){
+        toast.error("Bhai Tu to Phone se cheating karta hai ..." );
+        return;
+      }
+
       if(payload.name === 'Dev Kumar'){
         toast.error("Bhen ka land chala ja yaha se" );
         return;
@@ -161,7 +166,7 @@ const App: React.FC = () => {
       }
 
       const response: AxiosResponse<Blob> = await axios.post(
-        'https://r-file-backend.vercel.app/process-pdf', 
+        'http://localhost:5000/process-pdf', 
         payload, 
         {
           responseType: 'blob'
@@ -226,16 +231,7 @@ const App: React.FC = () => {
           }
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="relative">
-              <label 
-                htmlFor="roll_no" 
-                className={`absolute left-4 transition-all duration-200 ${
-                  isFocused.roll_no || formData.roll_no 
-                    ? 'top-0 text-xs text-purple-500 bg-white px-1 -mt-2' 
-                    : 'top-3 text-gray-400'
-                }`}
-              >
-                Roll Number
-              </label>
+             
               <input
                 type="text"
                 id="roll_no"
@@ -245,7 +241,7 @@ const App: React.FC = () => {
                 onFocus={() => handleFocus('roll_no')}
                 onBlur={() => handleBlur('roll_no')}
                 required
-                placeholder='Enter last 2 digit of your roll number'
+                placeholder='Enter Your Name / Roll Number' 
                 className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all"
                 autoComplete="off"
               />
@@ -316,7 +312,7 @@ const App: React.FC = () => {
         </div>
       </div>
       <footer className="mt-8 text-center text-gray-500">
-        <p className="text-sm">© 2025 Manish Prasad. All rights reserved.</p>
+        <p className="text-lg">© 2025 Manish Prasad. All rights reserved.</p>
         <p className="text-xs">Built for selected people</p>
       </footer> 
     </div>
