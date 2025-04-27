@@ -1,6 +1,6 @@
-import React, { useState, ChangeEvent, FormEvent, useEffect } from 'react';
+import React, { useState, ChangeEvent, FormEvent } from 'react';
 import axios, { AxiosError, AxiosResponse } from 'axios';
-import toast, { Toast, ToastBar, Toaster } from 'react-hot-toast';
+import toast, { Toaster } from 'react-hot-toast';
 const students = [
   { name: "AADARSH YADAV", roll_number: "41523001" },
   { name: "ABDULLAH", roll_number: "41523003" },
