@@ -221,7 +221,9 @@ const App: React.FC = () => {
           </div>
           
           <p className="text-center text-gray-600 mb-8">Enter your roll number to get your customized PDF 🚀</p>
-          
+          {
+            error && null
+          }
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="relative">
               <label 
