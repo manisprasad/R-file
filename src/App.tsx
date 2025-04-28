@@ -137,7 +137,7 @@ const App: React.FC = () => {
        return;
       }
 
-      if(payload.name === 'MANISH KUMAR' || payload.name === 'ANUJ SINGH' || payload.name === 'KANHIYA'){
+      if(payload.name === 'MANISH KUMAR' || payload.name === 'KANHIYA'){
         toast.error(`sorry ${payload.name} bete, Ek bar papa bol , fir download hoga` );
        return;
       }
