@@ -128,7 +128,7 @@ const App: React.FC = () => {
       };
             if(payload){
 
-                    toast.error("Too much traffic, please after some time. sorry for that.);
+                    toast.error("Too much traffic, please after some time. sorry for that.");
                     return;
             }
 
