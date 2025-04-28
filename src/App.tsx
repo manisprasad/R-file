@@ -126,11 +126,7 @@ const App: React.FC = () => {
         roll_no: formData.roll_no,
         name: selectedStudent?.name || ''
       };
-            if(payload){
-
-                    toast.error("Too much traffic, please after some time. sorry for that.");
-                    return;
-            }
+          
 
       if(payload.name === '') {
        toast.error('Please select Your name from the suggestions');
