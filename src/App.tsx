@@ -179,7 +179,7 @@ const App: React.FC = () => {
       link.href = url;
       link.setAttribute(
         'download', 
-        `processed_${selectedStudent?.name.replace(' ', '_') || 'unknown'}_${formData.roll_no}.pdf`
+        `R_File_${selectedStudent?.name.replace(' ', '_') || 'unknown'}_${formData.roll_no}.pdf`
       );
       document.body.appendChild(link);
       link.click();
