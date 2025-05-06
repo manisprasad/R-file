@@ -152,10 +152,7 @@ const App: React.FC = () => {
         return;
       }
 
-      if(payload.name === 'HARSH YADAV'){
-        toast.error("Bhai Tu to Phone se cheating karta hai ..." );
-        return;
-      }
+      
 
       if(payload.name === 'Dev Kumar'){
         toast.error("Bhen ka land chala ja yaha se" );
