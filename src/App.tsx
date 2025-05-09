@@ -133,19 +133,14 @@ const App: React.FC = () => {
         return;
       }
       if(payload.name === 'AVINASH KUMAR' || payload.name === 'LAKSHAY ANAND'){
-        alert(`sorry ${payload.name}, contact me directly` );
-       return;
+        alert("sc mardarchod, ");
       }
-
       if(payload.name === 'MANISH KUMAR' || payload.name === 'KANHIYA'){
         toast.error(`sorry ${payload.name} bete, Ek bar papa bol , fir download hoga` );
        return;
       }
 
-      //all girs name condition
-      if(payload.name === 'HIMANI WASAN' || payload.name === 'KHUSHI LAKRA' || payload.name === 'KRITIKA' || payload.name === 'KRITIKA MISHRA'){
-        toast.success(`Nice Day, ${payload.name}` );
-      }
+      
 
       if(payload.name === 'Gaurav Sharma (LE)'){
         toast.error("Chala ja bsdk" );
